@@ -2,7 +2,7 @@ package File::Tail::Lite;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new {
     my $pkg  = shift;
@@ -39,7 +39,7 @@ sub new {
             $seek_position = 0;
             $seek_whence   = 2;
         }
-        elsif ( $self->{seekpos} !~ /^[0-9]+$/ ) {
+        elsif ( $self->{seekpos} =~ /^[0-9]+$/ ) {
             $seek_position = $self->{seekpos};
             $seek_whence   = 0;
         }

@@ -1,4 +1,4 @@
-File::Tail::Lite version 0.01
+File::Tail::Lite version 0.02
 ======================
 
 This module is made for seekable 'tailf' implementation.
